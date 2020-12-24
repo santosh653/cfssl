@@ -1,3 +1,11 @@
+# Package             : cfssl
+# Source Repo         : https://github.com/cloudflare/cfssl
+# Travis Job Link     : 
+# Created travis.yml  : No
+# Maintainer          : Santosh Kulkarni <santoshkulkarni70@gmail.com>
+#
+# Script License      : Apache License, Version 2 or later
+
 sudo: false
 language: go
 
@@ -22,6 +30,14 @@ matrix:
     - arch: ppc64le
       go: 1.14.x
     - arch: ppc64le
+      go: 1.15.x
+    - arch: amd64
+      go: 1.12.x
+    - arch: amd64
+      go: 1.13.x
+    - arch: amd64
+      go: 1.14.x
+    - arch: amd64
       go: 1.15.x
       
 # Install g++-4.8 to support std=c++11 for github.com/google/certificate-transparency/go/merkletree
